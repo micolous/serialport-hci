@@ -12,8 +12,7 @@ readme = "README.md"
 
 [dependencies]
 nb = "0.1.2"
-# bluetooth-hci = "0.1.0"
-bluetooth-hci = { path = "../bluetooth-hci" }
+bluetooth-hci = { git = "https://github.com/micolous/bluetooth-hci.git", rev = "04f98f734b0b9f0304e433335357307f63f6bc26" }
 serialport = "4.2.0"
 
 [dev-dependencies]
