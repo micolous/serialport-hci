@@ -1,5 +1,7 @@
 //! `serialport-hci` demo for transmitting an Eddystone beacon for
 //! <https://www.rust-lang.org/>
+//! 
+//! To stop advertising, see `stop_advertising.rs`.
 use std::{time::Duration, env};
 
 use bluetooth_hci::{
@@ -93,5 +95,5 @@ fn main() {
     r = hci.read().unwrap();
     println!("<= {:?}", r);
 
-    println!("Open a beacon scanner on your mobile device, you should see an Eddystone beacon for https://www.rust-lang.org/")
+    println!("Open a beacon scanner on your mobile device, you should see an Eddystone beacon for https://www.rust-lang.org/");
 }
